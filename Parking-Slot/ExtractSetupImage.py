@@ -16,8 +16,6 @@ except:
 
 
 def extractImage(location, floor, url):
-    # url = "https://storage.googleapis.com/carkir-video/Detection%20of%20free%20parking%20spaces%20%20v0.1.mp4"
-
     location_name = "{}_{}".format(location, floor)
     cap = cv2.VideoCapture(url)
 
@@ -37,7 +35,6 @@ def extractImage(location, floor, url):
     cv2.destroyAllWindows()
 
 
-# def extractImage(data = camera_data):
 for data in camera_data:
     print('name: ', data['Location'])
     print('floor: ', data['Floor'])
