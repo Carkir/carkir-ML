@@ -147,9 +147,9 @@ def detection(x):
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.7, (255, 255, 255), 2)
 
-    name = "{}/extract_detect/detect{}.jpg".format(curDir, x)
-    print("Creating.. " + name)
-    cv2.imwrite(name, new_image)
+    # name = "{}/extract_detect/detect{}.jpg".format(curDir, x)
+    # print("Creating.. " + name)
+    # cv2.imwrite(name, new_image)
 
     json_name = "{}.json".format(image_name)
     with open(json_name, 'w') as f:
@@ -173,7 +173,7 @@ def getImage(x):
     image_gotten = np.copy(image)
     name = "{}/extract_detect/extract{}.jpg".format(curDir, x)
     print("Creating.. " + name)
-    cv2.imwrite(name, image_gotten)
+    # cv2.imwrite(name, image_gotten)
 
 
 # video_name = "https://storage.googleapis.com/carkir-video/Detection%20of%20free%20parking%20spaces%20%20v0.1.mp4"
@@ -203,7 +203,7 @@ while ret:
         result_data = {'Floor': 1, 'Cluster': 'A', 'Slot': 0, 'Occupancy': 0}
         if count == 50:
             count = 0
-            getImage(n)
+            # getImage(n)
             detection(n)
     else:
         print("Try looping")
