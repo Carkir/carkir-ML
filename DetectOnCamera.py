@@ -24,15 +24,18 @@ class_dictionary[1] = 'occupied'
 model = tf.keras.models.load_model('carkir.h5')
 
 curDir = os.getcwd()
-path = "{}/setup_image".format(curDir)
-dir_list = os.listdir(path)
-print("Files and directories in '", path, "' :")
+# path = "{}/setup_image".format(curDir)
+# dir_list = os.listdir(path)
+# print("Files and directories in '", path, "' :")
 
 # prints all files
-print(dir_list)
-image_name = input("Name of Location: ")
-image_floor = input("Floor: ")
-image_cluster = input("Cluster: ")
+# print(dir_list)
+# image_name = input("Name of Location: ")
+image_name = "Tomas_Sak_1"
+# image_floor = input("Floor: ")
+image_floor = 1.0
+# image_cluster = input("Cluster: ")
+image_cluster = "A"
 json_name = "{}_{}-slot".format(image_name, image_cluster)
 response = requests.get('https://android-api-btwe4mw5iq-et.a.run.app/ml/getSlot/{}'.format(json_name))
 print(response.status_code)
