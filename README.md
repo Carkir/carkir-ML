@@ -51,16 +51,16 @@ examine the area of each retangle to see if whether there was a car in there or
 not. 
 
 Here we need our training model to see there was a car in it or no. If the slot is
-empty, it will show green box and occupancy data shows '0' which means it's empty.
-If the slot is occupied, it will show red box and occupancy data shows '1' which
+empty, it will show green box and occupancy data shows '1' which means it's empty.
+If the slot is occupied, it will show red box and occupancy data shows '0' which
 means there's a car in it.
-
 
 
 The occupancy data then will be sent to Android API using POST requests. 
 If there's a slight change in occupancy data, for example the occupied slot becomes
 the empty slot, then the code automatically send the updated occupancy data to 
 Android API.
+
 
 ## Directory Structure
 1. **data-occupancy** folder contains json files, output of parking slot detection. There are 3 json files as we have three video.
@@ -82,5 +82,12 @@ Android API.
     - Python-OpenCV
     - Requests
     - etc.
+ 
+ ## Branches in this repository
+ There are 3 branch in this carkir-ML repository
+     - for-apps, consist codes of the code and marking output to see the detection output but not for deployment
+     - for-deployment, consist the needed codes, files, and images needed for deployment
+     - for-development, consist of machine learning detection model generator and the datasets used
+ 
 
 
