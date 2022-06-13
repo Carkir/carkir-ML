@@ -9,7 +9,8 @@ using CCTV to detect parking lot occupancy using OpenCV (Open Source Computer
 Vision) library in Python. 
 
 ## Overview
-![image](https://user-images.githubusercontent.com/105625833/173252399-09cd57d7-bc5e-4bd5-bac9-a2e9b68ce894.png)
+<!-- ![image](https://user-images.githubusercontent.com/105625833/173252399-09cd57d7-bc5e-4bd5-bac9-a2e9b68ce894.png) -->
+![image](https://github.com/Carkir/carkir-ML/blob/064afc24740abf5a8ababb54b1c57b5b70a0e237/with_marking.jpg)
 
 Program flow is as follows:
 - We input a place name to get the video of it. From the video, we get 
@@ -30,7 +31,10 @@ train our model and get 98% accuracy. Refers to [this code.](https://github.com/
 First, after we get the video and a still image of parking lot. We would manually
 draw rectangles to show which parking spots we are going to detect. 
 
-![image](https://user-images.githubusercontent.com/105625833/173252570-de8ff397-8407-4c73-93bf-f769ea779ab1.png)
+<!-- ![image](https://user-images.githubusercontent.com/105625833/173252570-de8ff397-8407-4c73-93bf-f769ea779ab1.png) -->
+![image](https://github.com/Carkir/carkir-ML/blob/064afc24740abf5a8ababb54b1c57b5b70a0e237/marked_spotBLK-HDPTZ12_1.jpg)
+![image](https://github.com/Carkir/carkir-ML/blob/064afc24740abf5a8ababb54b1c57b5b70a0e237/marked_spotBrisk_Synergies_1.jpg)
+![image](https://github.com/Carkir/carkir-ML/blob/064afc24740abf5a8ababb54b1c57b5b70a0e237/marked_spotTomas_Sak_1.jpg)
 
 By clicking four corners of each parking spot we want to track, we automatically 
 get the points of each spot that can be used to tell the exact place of its spot. After getting the points of each spot (data-slot repo), we convert the data into a json that will
