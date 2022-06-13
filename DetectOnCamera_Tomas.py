@@ -47,7 +47,7 @@ data = json.loads(response.text) #list
 # data = json.load(f)
 print('JSON-slot: ', data)
 
-the_image = 'setup_image/Tomas_Sak_1.jpg'
+the_image = 'Tomas_Sak_1.jpg'
 img = cv2.imread(the_image)
 
 
