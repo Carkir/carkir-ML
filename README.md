@@ -82,11 +82,13 @@ Android API.
     - Python-OpenCV
     - Requests
     - etc.
+
 ## Branches in this repository
 There are 3 branch in this carkir-ML repository:
-    - for-apps, consist codes of the code and marking output to see the detection output but not for deployment
-    - for-deployment, consist the needed codes, files, and images needed for deployment
-    - for-development, consist of machine learning detection model generator and the datasets used
+
+for-apps, consist codes of the code and marking output to see the detection output but not for deployment
+for-deployment, consist the needed codes, files, and images needed for deployment
+for-development, consist of machine learning detection model generator and the datasets used
 
  
 
