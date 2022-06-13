@@ -92,6 +92,14 @@ There are 3 branches in this carkir-ML repository:
 2. for-deployment, consist the needed codes, files, and images needed for deployment
 3. for-development, consist of machine learning detection model generator and the datasets used
 
+## References
+
+1. Ankit Khare. Youtube, 2017. https://youtu.be/y1M5dNkvCJc
+2. Acharya, Debaditya and Khoshelham, Kourosh. https://www.researchgate.net/profile/Debaditya-Acharya/publication/355576303_Parking_Occupancy_Detection_and_Slot_Delineation_Using_Deep_Learning_A_Tutorial/links/61773b7c3c987366c3e9ab0b/Parking-Occupancy-Detection-and-Slot-Delineation-Using-Deep-Learning-A-Tutorial.pdf
+3. PKLot Dataset. https://www.kaggle.com/datasets/ammarnassanalhajali/pklot-dataset
+4. Supercircuits. Youtube. https://youtu.be/U7HRKjlXK-Y
+5. Brisk Synergies. Youtube. https://youtu.be/oHFCnoiTn0k
+6. Tomas Sak. Youtube. https://youtu.be/B6p98QVEPGA
  
 
 
