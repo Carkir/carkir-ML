@@ -73,15 +73,17 @@ Android API.
    - SetupParkingSlot.py is to mark parking spot.
 5. **setup_image** is the output of ExtractSetupImage.py and the input of SetupParkingSlot.py
 6. **slot-detection** folder contains main code that will generate the final output of this project. There are 3 different code from 3 different place.
-7. **Dockerfile** is for deployment.
-8. **carkir_ModelGenerator.ipynb** is the training for our model with the dataset we create by ourselves from PKLot dataset.
-9. **marked_spotTomas_Sak_1.jpg** is the example image of a still image we mark for slot line.
-10. **requirements.txt** contains the main requirements for this project include:
+7. **DetectOnCamera.py** is the main code of this project which the user can input where the location, floor, and cluster. (For now, input floor = 1, cluster = A for the code to work)
+8. **Dockerfile** is for deployment.
+9. **carkir_ModelGenerator.ipynb** is the training for our model with the dataset we create by ourselves from PKLot dataset.
+10. **marked_spot[Name].jpg** is the example image of a still image we mark for slot line.
+11. **requirements.txt** contains the main requirements for this project include:
     - Tensorflow
     - Tensorflow-keras
     - Python-OpenCV
     - Requests
     - etc.
+12. **with_marking.jpg** is the example image from detection on another image from testing dataset.
 
 ## Branches in this repository
 There are 3 branches in this carkir-ML repository:
