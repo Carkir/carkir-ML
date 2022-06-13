@@ -84,7 +84,7 @@ Android API.
     - etc.
 
 ## Branches in this repository
-There are 3 branch in this carkir-ML repository:
+There are 3 branches in this carkir-ML repository:
 
 1. for-apps, consist codes of the code and marking output to see the detection output but not for deployment
 2. for-deployment, consist the needed codes, files, and images needed for deployment
