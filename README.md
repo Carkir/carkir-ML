@@ -26,7 +26,7 @@ empty parking slot to get labeled as 'Empty'. From the datasets we create, we
 train our model and get 98% accuracy. Refers to [this code.](https://github.com/Carkir/carkir-ML/blob/for-apps/carkir_ModelGenerator.ipynb)
 
 ## Process
-### Line Detection
+### Parking Slot Lining
 First, after we get the video and a still image of parking lot. We would manually
 draw rectangles to show which parking spots we are going to detect. 
 
@@ -60,22 +60,23 @@ Android API.
 
 ## Directory Structure
 1. **data-occupancy** folder contains json files, output of parking slot detection. There are 3 json files as we have three video.
-2. **data-slot** folder contains json files, output of line detection. The json shows points of each parking spot that has been marked.
+2. **data-slot** folder contains json files, output of parking slot lining. The json shows points of each parking spot that has been marked.
 3. **extract_detect** folder contains a bunch of final output images.
-4. **line-detection** folder contains:
+4. **parking_slot-lining** folder contains:
    - InputLocationCamera.py is to list down several camera into one folder and convert it into json.
    - Location-Camera.json is the output of InputLocationCamera.py
    - ExtractSetupImage.py is to generate the video from the camera and a still image from it.
    - SetupParkingSlot.py is to mark parking spot.
-5. **setup_image** is the output of ExtractSetupImage.py
-6. **slot-detection** folder contains code that will generate the final output of this project. There are 3 different code from 3 different place.
+5. **setup_image** is the output of ExtractSetupImage.py and the input of SetupParkingSlot.py
+6. **slot-detection** folder contains main code that will generate the final output of this project. There are 3 different code from 3 different place.
 7. **Dockerfile** is for deployment.
 8. **carkir_ModelGenerator.ipynb** is the training for our model with the dataset we create by ourselves from PKLot dataset.
-9. **marked_spotTomas_Sak_1.jpg** is the example image of a still image we mark.
+9. **marked_spotTomas_Sak_1.jpg** is the example image of a still image we mark for slot line.
 10. **requirements.txt** contains the main requirements for this project include:
     - Tensorflow
     - Tensorflow-keras
     - Python-OpenCV
     - Requests
+    - etc.
 
 
